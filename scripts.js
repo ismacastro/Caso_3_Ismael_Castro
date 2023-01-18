@@ -19,6 +19,9 @@ function updateMenu(){
         menu.style.display= "none"
     }
     else {
+        var tittles = document.getElementById("tittles");
+        var coverBook = document.getElementById("cover-book");
+        coverBook.appendChild(tittles);
         menuLarge.style.display= "flex"
         menu.style.display= "none"
     }

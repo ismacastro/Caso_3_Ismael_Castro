@@ -234,6 +234,9 @@ section.container-breadcrumbs > p > a {
 
 }
 
+.tittle-container{
+        order: -1;
+    }
  /* END CARD PRODUCT SECTION STYLES*/
 
 
