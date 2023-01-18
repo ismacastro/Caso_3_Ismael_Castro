@@ -1,6 +1,6 @@
 //Reload window
 
-setInterval('window.location.reload()', 2000);
+//setInterval('window.location.reload()', 2000);
 
 //Responsive menu
 function updateMenu(){
@@ -10,7 +10,13 @@ function updateMenu(){
     if (window.innerWidth < 768) {
         menuLarge.style.display= "none"
         menu.style.display= "flex"
-    } else {
+    }
+        else if(window.innerWidth > 768){
+        var tittles = document.getElementById("tittles");
+        var infoContainer = document.getElementById("info-container");
+        infoContainer.appendChild(tittles);
+    }
+    else {
         menuLarge.style.display= "flex"
         menu.style.display= "none"
     }

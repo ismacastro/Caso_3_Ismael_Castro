@@ -105,13 +105,17 @@
     </section>
     <section>
       <div class="product-card">
-        <h1>La otra realidad del camino</h1>
-        <h2>Jonh Smith</h2>
+        <div id="tittles" class="tittle-container">
+            <h1 class="tittle">La otra realidad del camino</h1>
+            <h2 class="author">Jonh Smith</h2>
+        </div>
+        <div class="cover-book-container">
         <img
-          style="width: 100%; margin: 0; display: block"
           src="./assets/book-cover.jpg"
         />
-        <button class="demo-button">Leer primeras páginas</button>
+            <button style="width: 75%;margin-top: 7.5%;" class="submit-button">Leer primeras páginas</button>
+        </div>
+        <div id="info-container">
         <p class="card-text">
           Lorem ipsum dolor sit amet consectetur adipiscing elit felis penatibus
           pretium neque aliquet donec diam elementum, sagittis montes sapien
@@ -133,8 +137,9 @@
           <input type="radio" name="html" />
           <input type="radio" name="html" />
           <input type="radio" name="html" />
+          <input type="radio" name="html" checked/>
           <input type="radio" name="html" />
-          <input type="radio" name="html" />
+        </div>
         </div>
       </div>
     </section>
@@ -151,8 +156,7 @@
           required
         ></textarea>
         <input
-          style="width: 100%; margin-top: 2.5%"
-          class="demo-button"
+          class="submit-button"
           type="submit"
         />
       </div>

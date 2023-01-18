@@ -1,5 +1,3 @@
-@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicicons.min.css";
-
 body{
     width: 100%;
     margin: 0;
@@ -114,28 +112,6 @@ body > nav > div > div.menu-container > ul > li > a {
     cursor: pointer;
 }
 
-
-
-@media (min-width: 980px) {
-    .nav-container {
-      width: 75%;
-    }
-  }
-
-@media (min-width: 1250px) {
-    
-    .nav-container{
-        width: 60%;
-    }
-  }
-
-@media (min-width: 1440px){
-
-    .menu-container {
-        width: 40%;
-      } 
-  }
-
   /* END NAV STYLES */
 
 .container-breadcrumbs{
@@ -144,6 +120,7 @@ body > nav > div > div.menu-container > ul > li > a {
     align-items: center;
     width: 90%;
     padding: 5% 5%;
+    margin: 0 auto;
 }
 
   .breadcrumbs{
@@ -161,31 +138,33 @@ section.container-breadcrumbs > p > a {
 /* END BREADCRUMBS STYLES*/
 
 .product-card{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 90%;
 }
 
-.product-card > h1{
+.tittle{
     font-size: 25px;
     color: #545454;}
 
-.product-card > h2 {
+.author {
     font-size: 18px;
     color: #545454;
     margin-bottom: 5%;
     font-weight: 200;
 }
-
-.demo-button{
-    background-color: #D7B582;
-    border: none;
-    border-radius: 7px;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: #FFFFFF;
-    margin: 10% auto;
-    display: block;
+.cover-book-container{
+    width: 100%;
 }
+
+.cover-book-container > img{
+    width: 100%;
+    margin: 0 auto;
+    display: block
+}
+
+
 
 .card-text{
     font-size: 18px;
@@ -197,27 +176,32 @@ section.container-breadcrumbs > p > a {
     color: #545454;
 }
 
-
+.start {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .stars input{
     -webkit-appearance: none;
     appearance: none;
 }
-
 .stars input::before{
     content: '\f005';
     font-family: fontAwesome;
     font-size: 30px;
-    color: #747474;
+    color: #ffc400;
     transition: 0.25s;
 }
 
-.stars input:nth-child(2n+1)::after{
+.stars input:nth-child(2n + 1)::before{
     left: initial;
 }
 
-.stars input:hover ~ input::before{
-    color: #ff9c07;
+.stars input:hover ~ input::before,
+.stars input:checked ~ input::before{
+    color: #545454;
 }
 
 .price{
@@ -233,13 +217,21 @@ section.container-breadcrumbs > p > a {
 }
 
 .buy-button{
-    background-color: #82A4D7;
+    cursor: pointer;
+    background-color: #82a4d791;
     border: none;
     border-radius: 7px;
     padding: 10px 20px;
-    font-size: 22px;
+    font-size: 20px;
     color: #FFFFFF;
     margin: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    transition: 300ms;
+}
+
+.buy-button:hover{
+    background-color: #82A4D7;
+
 }
 
  /* END CARD PRODUCT SECTION STYLES*/
@@ -269,6 +261,25 @@ section.container-breadcrumbs > p > a {
     padding: 10px 15px;
 }
 
+.submit-button{
+    cursor: pointer;
+    background-color: #d7b582b0;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 2.5% auto;
+    display: block;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+    width: 95%; 
+    transition: 200ms;
+}
+
+.submit-button:hover{
+    background-color: #D7B582;
+}
+
 textarea{
     font-family: "Lato", open sans;
     width: 90%;
@@ -281,8 +292,8 @@ textarea{
 
 footer{
     background-color: #464646;
-    padding: 5% 5%;
-    width: 90%;
+    padding: 5%;
+    width: auto;
 }
 
 footer > p {
@@ -290,3 +301,85 @@ footer > p {
     color: #FFFFFF;
     font-size: 16px;
 }
+
+/* BREAKPOINTS */
+@media (min-width: 768px) {
+    
+    .cover-book-container{
+        width: 45%;
+        margin-right: 2.5%;
+    }
+    
+    .tittle-container{
+        order: -1;
+    }
+
+    footer{
+        padding: 1.5%;
+    }
+
+    .section-review{
+        margin-top: 5%;
+        padding: 5% 0;
+    }
+
+    #info-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5%;
+        width: 45%;
+    }
+
+    .product-card{
+        flex-direction: row;
+    }
+    .form-container{
+        width: 60%;
+    }
+}
+
+@media (min-width: 980px) {
+    .container-breadcrumbs{
+        width: 75%;
+    }
+     .product-card{
+        width: 75%;
+    }
+    .buy-button{
+        margin: 0 10%;
+    }
+    .container-price{
+        justify-content: start;
+    }
+    .nav-container {
+      width: 75%;
+    }
+  }
+
+@media (min-width: 1250px) {
+    .container-breadcrumbs{
+        width: 60%;
+        padding: 2%;
+    }
+    .product-card{
+        width: 60%;
+    }
+    
+    .cover-book-container > img{
+        width: 75%;        
+    }
+
+    .nav-container{
+        width: 60%;
+    }
+    .form-container{
+        width: 40%;
+    }
+  }
+
+@media (min-width: 1440px){
+
+    .menu-container {
+        width: 40%;
+      } 
+  }
