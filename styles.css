@@ -1,6 +1,7 @@
 body{
     width: 100%;
     margin: 0;
+    font-family: "Lato", open sans;
 }
 
 nav{
@@ -12,7 +13,7 @@ nav{
     align-items: center;
 }
 
-.container{
+.nav-container{
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -88,7 +89,6 @@ nav{
     list-style: none;
     color: #FFFFFF;
     font-size: 20px;
-    font-family: "Lato", open sans;
     font-weight: 200;
 }
 
@@ -115,14 +115,14 @@ body > nav > div > div.menu-container > ul > li > a {
 
 
 @media (min-width: 980px) {
-    .container {
+    .nav-container {
       width: 75%;
     }
   }
 
 @media (min-width: 1250px) {
     
-    .container{
+    .nav-container{
         width: 60%;
     }
   }
@@ -133,3 +133,102 @@ body > nav > div > div.menu-container > ul > li > a {
         width: 40%;
       } 
   }
+
+  /* END NAV STYLES */
+
+.container-breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 5% 5%;
+}
+
+  .breadcrumbs{
+    font-size: 16px;
+    margin: 0;
+  }
+section.container-breadcrumbs > p > a {
+    color: inherit;
+  }
+
+.container-breadcrumbs > p > a:hover {
+    text-decoration: none;
+}
+
+/* END BREADCRUMBS STYLES*/
+
+.product-card{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.product-card > h1{
+    font-size: 25px;
+    color: #545454;}
+
+.product-card > h2 {
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 5%;
+    font-weight: 200;
+}
+
+.demo-button{
+    background-color: #D7B582;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 10% auto;
+    display: block;
+}
+
+.card-text{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.rate-text{
+    font-size: 22px;
+    color: #545454;
+}
+
+.price{
+    font-size: 30px;
+    color: #545454;
+}
+
+.container-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy-button{
+    background-color: #82A4D7;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+ /* END CARD PRODUCT SECTION STYLES*/
+
+
+ .section-review{
+    width: 100%;
+    background-color: #ECECEC;
+    padding: 10% 0;
+ }
+
+.form-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

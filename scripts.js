@@ -1,6 +1,6 @@
 //Reload window
 
-// setInterval('window.location.reload()', 2000);
+setInterval('window.location.reload()', 2000);
 
 //Responsive menu
 function updateMenu(){
