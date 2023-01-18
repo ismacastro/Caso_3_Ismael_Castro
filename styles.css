@@ -1,0 +1,97 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    background-color: #D7B582;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-container{
+    width: 257px;
+    cursor: pointer;
+}
+
+.menu-container{
+    width: 60%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 60px;   
+}
+
+.menu-list{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Lato", open sans;
+    font-weight: 200;
+}
+
+body > nav > div > div.menu-container > ul > li > a:hover{
+    color: #747474;
+}
+body > nav > div > div.menu-container > ul > li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.cart-icon, .menu-icon{
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
+
+.cart-icon:hover, .menu-icon:hover{
+    fill: #747474;
+    cursor: pointer;
+}
+
+#menu{
+    width: 30px;
+}
+
+@media (min-width: 980px) {
+    .container {
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 1250px) {
+    
+    .container{
+        width: 60%;
+    }
+  }
+
+  @media (min-width: 1440px){
+
+    .menu-container {
+        width: 40%;
+      } 
+  }
