@@ -1,3 +1,5 @@
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicicons.min.css";
+
 body{
     width: 100%;
     margin: 0;
@@ -195,6 +197,29 @@ section.container-breadcrumbs > p > a {
     color: #545454;
 }
 
+
+
+.stars input{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.stars input::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    font-size: 30px;
+    color: #747474;
+    transition: 0.25s;
+}
+
+.stars input:nth-child(2n+1)::after{
+    left: initial;
+}
+
+.stars input:hover ~ input::before{
+    color: #ff9c07;
+}
+
 .price{
     font-size: 30px;
     color: #545454;
@@ -212,7 +237,7 @@ section.container-breadcrumbs > p > a {
     border: none;
     border-radius: 7px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 22px;
     color: #FFFFFF;
     margin: 0;
 }
