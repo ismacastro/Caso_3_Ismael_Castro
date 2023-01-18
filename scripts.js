@@ -15,6 +15,8 @@ function updateMenu(){
         var tittles = document.getElementById("tittles");
         var infoContainer = document.getElementById("info-container");
         infoContainer.appendChild(tittles);
+        menuLarge.style.display= "flex"
+        menu.style.display= "none"
     }
     else {
         menuLarge.style.display= "flex"
