@@ -221,14 +221,47 @@ section.container-breadcrumbs > p > a {
 
 
  .section-review{
+    margin-top: 10%;
     width: 100%;
     background-color: #ECECEC;
     padding: 10% 0;
  }
 
 .form-container{
+    margin: 0 auto;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form-input{
+    font-size: 18px;
+    margin: 2.5% 0;
+    border-radius: 7px;
+    border: none;
+    width: 90%;
+    padding: 10px 15px;
+}
+
+textarea{
+    font-family: "Lato", open sans;
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin: 2.5% 0;
+    border-radius: 7px;
+    border: none;
+}
+
+footer{
+    background-color: #464646;
+    padding: 5% 5%;
+    width: 90%;
+}
+
+footer > p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
 }

@@ -134,10 +134,26 @@
     <section class="section-review">
       <div class="form-container">
         <p class="rate-text">Dejanos tu comentario</p>
-        <input type="name" placeholder="Nombre" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Tu comentario" />
+        <input class="form-input" type="name" placeholder="Nombre" required />
+        <input class="form-input" type="email" placeholder="Email" required />
+        <textarea
+          placeholder="Tu comentario"
+          name="textarea"
+          rows="5"
+          cols="40"
+          required
+        ></textarea>
+        <input
+          style="width: 100%; margin-top: 2.5%"
+          class="demo-button"
+          type="submit"
+        />
       </div>
     </section>
+    <footer>
+      <p>
+        Editorial Castro ©<br />Web diseñada y desarrollada por Ismael Castro
+      </p>
+    </footer>
   </body>
 </html>
