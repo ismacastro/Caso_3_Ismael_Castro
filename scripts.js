@@ -8,9 +8,13 @@ function updateMenu(){
     let menuLarge = document.getElementById('menu-large');
 
     if (window.innerWidth < 768) {
+        var tittles = document.getElementById("tittles");
+        var coverBook = document.getElementById("cover-book");
+        coverBook.appendChild(tittles);
         menuLarge.style.display= "none"
         menu.style.display= "flex"
     }
+
         else if(window.innerWidth > 768){
         var tittles = document.getElementById("tittles");
         var infoContainer = document.getElementById("info-container");
@@ -18,6 +22,7 @@ function updateMenu(){
         menuLarge.style.display= "flex"
         menu.style.display= "none"
     }
+
     else {
         var tittles = document.getElementById("tittles");
         var coverBook = document.getElementById("cover-book");
